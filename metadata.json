@@ -1,0 +1,6 @@
+{
+  "name": "Cold Coffee POS",
+  "description": "A high-performance Cafe Point of Sale system with order management, menu customization, live inventory tracking, printable receipts, and comprehensive sales reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

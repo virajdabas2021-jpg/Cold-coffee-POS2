@@ -1,0 +1,673 @@
+@import "tailwindcss";
+
+/* System-Wide Custom Theme Variables */
+:root {
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #f1f5f9;
+}
+
+/* ==========================================
+   THEME: SLATE DARK (theme-dark)
+   ========================================== */
+.theme-dark {
+  background-color: #0f172a !important;
+}
+
+.theme-dark, .theme-dark main, .theme-dark #viewport-content-frame {
+  background-color: #0f172a !important;
+  color: #f1f5f9 !important;
+}
+
+/* Sidebar styling for Dark Theme */
+.theme-dark #terminal-sidebar {
+  background-color: #1e293b !important;
+  border-right-color: #334155 !important;
+}
+.theme-dark #sidebar-brand, .theme-dark #terminal-sidebar > div:last-child {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+}
+.theme-dark #sidebar-staff-profile {
+  background-color: rgba(15, 23, 42, 0.4) !important;
+  border-color: rgba(51, 65, 85, 0.6) !important;
+}
+.theme-dark #sidebar-tabs-list button:not(.bg-indigo-700) {
+  color: #94a3b8 !important;
+}
+.theme-dark #sidebar-tabs-list button:not(.bg-indigo-700):hover {
+  background-color: rgba(15, 23, 42, 0.6) !important;
+  color: #f8fafc !important;
+}
+
+/* Cards & Panels */
+.theme-dark .bg-white, 
+.theme-dark #settings-panel, 
+.theme-dark #pos-catalog-panel, 
+.theme-dark #pos-billing-panel,
+.theme-dark [id^="row-menu-"],
+.theme-dark .shadow-xs,
+.theme-dark .shadow-sm {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+/* Sub-panels and lighter containers */
+.theme-dark .bg-slate-50, 
+.theme-dark .bg-gray-50, 
+.theme-dark .bg-gray-50\/70, 
+.theme-dark .bg-gray-50\/50, 
+.theme-dark .bg-slate-50\/50 {
+  background-color: #0f172a !important;
+}
+
+/* Borders */
+.theme-dark .border-gray-100, 
+.theme-dark .border-slate-100, 
+.theme-dark .border-slate-200, 
+.theme-dark .border-gray-200,
+.theme-dark .border-t,
+.theme-dark .border-b,
+.theme-dark .border {
+  border-color: #334155 !important;
+}
+
+/* Typography styling overrides */
+.theme-dark .text-gray-900, 
+.theme-dark .text-slate-800, 
+.theme-dark .text-gray-800, 
+.theme-dark .text-indigo-950, 
+.theme-dark h1, 
+.theme-dark h2, 
+.theme-dark h3, 
+.theme-dark h4 {
+  color: #f8fafc !important;
+}
+
+.theme-dark .text-gray-500, 
+.theme-dark .text-slate-500, 
+.theme-dark .text-gray-400, 
+.theme-dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+/* Interactive elements & inputs */
+.theme-dark input, 
+.theme-dark select, 
+.theme-dark textarea, 
+.theme-dark .bg-gray-50 input,
+.theme-dark .bg-white input {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+.theme-dark .hover\:bg-gray-50\/50:hover, 
+.theme-dark .hover\:bg-gray-50:hover,
+.theme-dark tr:hover {
+  background-color: rgba(30, 41, 59, 0.5) !important;
+}
+
+.theme-dark header, 
+.theme-dark #top-navbar {
+  background-color: #1e293b !important;
+  border-bottom-color: #334155 !important;
+}
+
+
+/* ==========================================
+   THEME: MIDNIGHT PITCH (theme-midnight)
+   ========================================== */
+.theme-midnight {
+  background-color: #000000 !important;
+}
+
+.theme-midnight, .theme-midnight main, .theme-midnight #viewport-content-frame {
+  background-color: #000000 !important;
+  color: #f3f4f6 !important;
+}
+
+/* Sidebar styling for Midnight Theme */
+.theme-midnight #terminal-sidebar {
+  background-color: #0a0a0a !important;
+  border-right-color: #1f2937 !important;
+}
+.theme-midnight #sidebar-brand, .theme-midnight #terminal-sidebar > div:last-child {
+  background-color: #000000 !important;
+  border-color: #1f2937 !important;
+}
+.theme-midnight #sidebar-staff-profile {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  border-color: rgba(31, 41, 55, 0.8) !important;
+}
+.theme-midnight #sidebar-tabs-list button:not(.bg-indigo-700) {
+  color: #9ca3af !important;
+}
+.theme-midnight #sidebar-tabs-list button:not(.bg-indigo-700):hover {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: #ffffff !important;
+}
+
+/* Cards & Panels */
+.theme-midnight .bg-white, 
+.theme-midnight #settings-panel, 
+.theme-midnight #pos-catalog-panel, 
+.theme-midnight #pos-billing-panel,
+.theme-midnight [id^="row-menu-"],
+.theme-midnight .shadow-xs,
+.theme-midnight .shadow-sm {
+  background-color: #0a0a0a !important;
+  border-color: #1f2937 !important;
+}
+
+/* Sub-panels and lighter containers */
+.theme-midnight .bg-slate-50, 
+.theme-midnight .bg-gray-50, 
+.theme-midnight .bg-gray-50\/70, 
+.theme-midnight .bg-gray-50\/50, 
+.theme-midnight .bg-slate-50\/50 {
+  background-color: #000000 !important;
+}
+
+/* Borders */
+.theme-midnight .border-gray-100, 
+.theme-midnight .border-slate-100, 
+.theme-midnight .border-slate-200, 
+.theme-midnight .border-gray-200,
+.theme-midnight .border-t,
+.theme-midnight .border-b,
+.theme-midnight .border {
+  border-color: #1f2937 !important;
+}
+
+/* Typography styling overrides */
+.theme-midnight .text-gray-900, 
+.theme-midnight .text-slate-800, 
+.theme-midnight .text-gray-800, 
+.theme-midnight .text-indigo-950, 
+.theme-midnight h1, 
+.theme-midnight h2, 
+.theme-midnight h3, 
+.theme-midnight h4 {
+  color: #f3f4f6 !important;
+}
+
+.theme-midnight .text-gray-500, 
+.theme-midnight .text-slate-500, 
+.theme-midnight .text-gray-400, 
+.theme-midnight .text-slate-400 {
+  color: #9ca3af !important;
+}
+
+/* Interactive elements & inputs */
+.theme-midnight input, 
+.theme-midnight select, 
+.theme-midnight textarea,
+.theme-midnight .bg-gray-50 input,
+.theme-midnight .bg-white input {
+  background-color: #000000 !important;
+  color: #f3f4f6 !important;
+  border-color: #374151 !important;
+}
+
+.theme-midnight .hover\:bg-gray-50\/50:hover, 
+.theme-midnight .hover\:bg-gray-50:hover,
+.theme-midnight tr:hover {
+  background-color: rgba(10, 10, 10, 0.5) !important;
+}
+
+.theme-midnight header, 
+.theme-midnight #top-navbar {
+  background-color: #0a0a0a !important;
+  border-bottom-color: #1f2937 !important;
+}
+
+
+/* ==========================================
+   THEME: WARM SEPIA (theme-warm)
+   ========================================== */
+.theme-warm {
+  background-color: #faf6ee !important;
+}
+
+.theme-warm, .theme-warm main, .theme-warm #viewport-content-frame {
+  background-color: #faf6ee !important;
+  color: #402e2a !important;
+}
+
+/* Sidebar styling for Warm Sepia Theme */
+.theme-warm #terminal-sidebar {
+  background-color: #2c1a16 !important;
+  border-right-color: #ebd9c0 !important;
+}
+.theme-warm #sidebar-brand, .theme-warm #terminal-sidebar > div:last-child {
+  background-color: #1b100e !important;
+  border-color: #3d231e !important;
+}
+.theme-warm #sidebar-staff-profile {
+  background-color: rgba(27, 16, 14, 0.4) !important;
+  border-color: rgba(61, 35, 30, 0.6) !important;
+}
+.theme-warm #sidebar-tabs-list button:not(.bg-indigo-700) {
+  color: #ebd9c0 !important;
+}
+.theme-warm #sidebar-tabs-list button:not(.bg-indigo-700):hover {
+  background-color: rgba(27, 16, 14, 0.7) !important;
+  color: #ffffff !important;
+}
+.theme-warm #sidebar-tabs-list button.bg-indigo-700 {
+  background-color: #8b5a2b !important;
+  border-left-color: #cd853f !important;
+}
+
+/* Cards & Panels */
+.theme-warm .bg-white, 
+.theme-warm #settings-panel, 
+.theme-warm #pos-catalog-panel, 
+.theme-warm #pos-billing-panel,
+.theme-warm [id^="row-menu-"],
+.theme-warm .shadow-xs,
+.theme-warm .shadow-sm {
+  background-color: #fffdfa !important;
+  border-color: #f0e6d2 !important;
+}
+
+/* Sub-panels and lighter containers */
+.theme-warm .bg-slate-50, 
+.theme-warm .bg-gray-50, 
+.theme-warm .bg-gray-50\/70, 
+.theme-warm .bg-gray-50\/50, 
+.theme-warm .bg-slate-50\/50 {
+  background-color: #faf6ee !important;
+}
+
+/* Borders */
+.theme-warm .border-gray-100, 
+.theme-warm .border-slate-100, 
+.theme-warm .border-slate-200, 
+.theme-warm .border-gray-200,
+.theme-warm .border-t,
+.theme-warm .border-b,
+.theme-warm .border {
+  border-color: #f0e6d2 !important;
+}
+
+/* Typography styling overrides */
+.theme-warm .text-gray-900, 
+.theme-warm .text-slate-800, 
+.theme-warm .text-gray-800, 
+.theme-warm .text-indigo-950, 
+.theme-warm h1, 
+.theme-warm h2, 
+.theme-warm h3, 
+.theme-warm h4 {
+  color: #402e2a !important;
+}
+
+.theme-warm .text-gray-500, 
+.theme-warm .text-slate-500, 
+.theme-warm .text-gray-400, 
+.theme-warm .text-slate-400 {
+  color: #806b67 !important;
+}
+
+/* Interactive elements & inputs */
+.theme-warm input, 
+.theme-warm select, 
+.theme-warm textarea,
+.theme-warm .bg-gray-50 input,
+.theme-warm .bg-white input {
+  background-color: #fffdfa !important;
+  color: #402e2a !important;
+  border-color: #ebd9c0 !important;
+}
+
+.theme-warm .hover\:bg-gray-50\/50:hover, 
+.theme-warm .hover\:bg-gray-50:hover,
+.theme-warm tr:hover {
+  background-color: rgba(250, 246, 238, 0.7) !important;
+}
+
+.theme-warm header, 
+.theme-warm #top-navbar {
+  background-color: #fffdfa !important;
+  border-bottom-color: #f0e6d2 !important;
+}
+
+
+/* ==========================================
+   THEME: FOREST EMERALD (theme-forest)
+   ========================================== */
+.theme-forest {
+  background-color: #f2f7f5 !important;
+}
+
+.theme-forest, .theme-forest main, .theme-forest #viewport-content-frame {
+  background-color: #f2f7f5 !important;
+  color: #0f2e22 !important;
+}
+
+/* Sidebar styling for Forest Theme */
+.theme-forest #terminal-sidebar {
+  background-color: #081c15 !important;
+  border-right-color: #cedcd5 !important;
+}
+.theme-forest #sidebar-brand, .theme-forest #terminal-sidebar > div:last-child {
+  background-color: #040e0a !important;
+  border-color: #133c2a !important;
+}
+.theme-forest #sidebar-staff-profile {
+  background-color: rgba(4, 14, 10, 0.4) !important;
+  border-color: rgba(19, 60, 42, 0.6) !important;
+}
+.theme-forest #sidebar-tabs-list button:not(.bg-indigo-700) {
+  color: #adc1b8 !important;
+}
+.theme-forest #sidebar-tabs-list button:not(.bg-indigo-700):hover {
+  background-color: rgba(4, 14, 10, 0.7) !important;
+  color: #ffffff !important;
+}
+.theme-forest #sidebar-tabs-list button.bg-indigo-700 {
+  background-color: #1b4332 !important;
+  border-left-color: #40916c !important;
+}
+
+/* Cards & Panels */
+.theme-forest .bg-white, 
+.theme-forest #settings-panel, 
+.theme-forest #pos-catalog-panel, 
+.theme-forest #pos-billing-panel,
+.theme-forest [id^="row-menu-"],
+.theme-forest .shadow-xs,
+.theme-forest .shadow-sm {
+  background-color: #fcfffd !important;
+  border-color: #cedcd5 !important;
+}
+
+/* Sub-panels and lighter containers */
+.theme-forest .bg-slate-50, 
+.theme-forest .bg-gray-50, 
+.theme-forest .bg-gray-50\/70, 
+.theme-forest .bg-gray-50\/50, 
+.theme-forest .bg-slate-50\/50 {
+  background-color: #f2f7f5 !important;
+}
+
+/* Borders */
+.theme-forest .border-gray-100, 
+.theme-forest .border-slate-100, 
+.theme-forest .border-slate-200, 
+.theme-forest .border-gray-200,
+.theme-forest .border-t,
+.theme-forest .border-b,
+.theme-forest .border {
+  border-color: #cedcd5 !important;
+}
+
+/* Typography styling overrides */
+.theme-forest .text-gray-900, 
+.theme-forest .text-slate-800, 
+.theme-forest .text-gray-800, 
+.theme-forest .text-indigo-950, 
+.theme-forest h1, 
+.theme-forest h2, 
+.theme-forest h3, 
+.theme-forest h4 {
+  color: #0f2e22 !important;
+}
+
+.theme-forest .text-gray-500, 
+.theme-forest .text-slate-500, 
+.theme-forest .text-gray-400, 
+.theme-forest .text-slate-400 {
+  color: #4a6b5d !important;
+}
+
+/* Interactive elements & inputs */
+.theme-forest input, 
+.theme-forest select, 
+.theme-forest textarea,
+.theme-forest .bg-gray-50 input,
+.theme-forest .bg-white input {
+  background-color: #fcfffd !important;
+  color: #0f2e22 !important;
+  border-color: #cedcd5 !important;
+}
+
+.theme-forest .hover\:bg-gray-50\/50:hover, 
+.theme-forest .hover\:bg-gray-50:hover,
+.theme-forest tr:hover {
+  background-color: rgba(242, 247, 245, 0.7) !important;
+}
+
+.theme-forest header, 
+.theme-forest #top-navbar {
+  background-color: #fcfffd !important;
+  border-bottom-color: #cedcd5 !important;
+}
+
+
+/* ==========================================
+   THEME: CYBER NEON (theme-cyberpunk)
+   ========================================== */
+.theme-cyberpunk {
+  background-color: #05050c !important;
+}
+
+.theme-cyberpunk, .theme-cyberpunk main, .theme-cyberpunk #viewport-content-frame {
+  background-color: #05050c !important;
+  color: #ffffff !important;
+}
+
+/* Sidebar styling for Cyberpunk Theme */
+.theme-cyberpunk #terminal-sidebar {
+  background-color: #090a14 !important;
+  border-right-color: #272a4f !important;
+}
+.theme-cyberpunk #sidebar-brand, .theme-cyberpunk #terminal-sidebar > div:last-child {
+  background-color: #040409 !important;
+  border-color: #171935 !important;
+}
+.theme-cyberpunk #sidebar-staff-profile {
+  background-color: rgba(4, 4, 9, 0.5) !important;
+  border-color: rgba(23, 25, 53, 0.6) !important;
+}
+.theme-cyberpunk #sidebar-tabs-list button:not(.bg-indigo-700) {
+  color: #7d89c9 !important;
+}
+.theme-cyberpunk #sidebar-tabs-list button:not(.bg-indigo-700):hover {
+  background-color: rgba(4, 4, 9, 0.8) !important;
+  color: #00f0ff !important;
+}
+.theme-cyberpunk #sidebar-tabs-list button.bg-indigo-700 {
+  background-color: #ff007f !important;
+  border-left-color: #00f0ff !important;
+}
+
+/* Cards & Panels */
+.theme-cyberpunk .bg-white, 
+.theme-cyberpunk #settings-panel, 
+.theme-cyberpunk #pos-catalog-panel, 
+.theme-cyberpunk #pos-billing-panel,
+.theme-cyberpunk [id^="row-menu-"],
+.theme-cyberpunk .shadow-xs,
+.theme-cyberpunk .shadow-sm {
+  background-color: #0e0f21 !important;
+  border-color: #272a4f !important;
+}
+
+/* Sub-panels and lighter containers */
+.theme-cyberpunk .bg-slate-50, 
+.theme-cyberpunk .bg-gray-50, 
+.theme-cyberpunk .bg-gray-50\/70, 
+.theme-cyberpunk .bg-gray-50\/50, 
+.theme-cyberpunk .bg-slate-50\/50 {
+  background-color: #05050c !important;
+}
+
+/* Borders */
+.theme-cyberpunk .border-gray-100, 
+.theme-cyberpunk .border-slate-100, 
+.theme-cyberpunk .border-slate-200, 
+.theme-cyberpunk .border-gray-200,
+.theme-cyberpunk .border-t,
+.theme-cyberpunk .border-b,
+.theme-cyberpunk .border {
+  border-color: #272a4f !important;
+}
+
+/* Typography styling overrides */
+.theme-cyberpunk .text-gray-900, 
+.theme-cyberpunk .text-slate-800, 
+.theme-cyberpunk .text-gray-800, 
+.theme-cyberpunk .text-indigo-950, 
+.theme-cyberpunk h1, 
+.theme-cyberpunk h2, 
+.theme-cyberpunk h3, 
+.theme-cyberpunk h4 {
+  color: #ffffff !important;
+}
+
+.theme-cyberpunk .text-gray-500, 
+.theme-cyberpunk .text-slate-500, 
+.theme-cyberpunk .text-gray-400, 
+.theme-cyberpunk .text-slate-400 {
+  color: #7d89c9 !important;
+}
+
+/* Interactive elements & inputs */
+.theme-cyberpunk input, 
+.theme-cyberpunk select, 
+.theme-cyberpunk textarea,
+.theme-cyberpunk .bg-gray-50 input,
+.theme-cyberpunk .bg-white input {
+  background-color: #05050c !important;
+  color: #ffffff !important;
+  border-color: #272a4f !important;
+}
+
+.theme-cyberpunk .hover\:bg-gray-50\/50:hover, 
+.theme-cyberpunk .hover\:bg-gray-50:hover,
+.theme-cyberpunk tr:hover {
+  background-color: rgba(14, 15, 33, 0.8) !important;
+}
+
+.theme-cyberpunk header, 
+.theme-cyberpunk #top-navbar {
+  background-color: #0e0f21 !important;
+  border-bottom-color: #272a4f !important;
+}
+
+
+/* ==========================================
+   THEME: OCEAN BREEZE (theme-ocean)
+   ========================================== */
+.theme-ocean {
+  background-color: #f0f4f8 !important;
+}
+
+.theme-ocean, .theme-ocean main, .theme-ocean #viewport-content-frame {
+  background-color: #f0f4f8 !important;
+  color: #03346e !important;
+}
+
+/* Sidebar styling for Ocean Theme */
+.theme-ocean #terminal-sidebar {
+  background-color: #021526 !important;
+  border-right-color: #c8daf0 !important;
+}
+.theme-ocean #sidebar-brand, .theme-ocean #terminal-sidebar > div:last-child {
+  background-color: #010b14 !important;
+  border-color: #05223e !important;
+}
+.theme-ocean #sidebar-staff-profile {
+  background-color: rgba(1, 11, 20, 0.4) !important;
+  border-color: rgba(5, 34, 62, 0.6) !important;
+}
+.theme-ocean #sidebar-tabs-list button:not(.bg-indigo-700) {
+  color: #94a9bf !important;
+}
+.theme-ocean #sidebar-tabs-list button:not(.bg-indigo-700):hover {
+  background-color: rgba(1, 11, 20, 0.7) !important;
+  color: #ffffff !important;
+}
+.theme-ocean #sidebar-tabs-list button.bg-indigo-700 {
+  background-color: #0e46a3 !important;
+  border-left-color: #38bdf8 !important;
+}
+
+/* Cards & Panels */
+.theme-ocean .bg-white, 
+.theme-ocean #settings-panel, 
+.theme-ocean #pos-catalog-panel, 
+.theme-ocean #pos-billing-panel,
+.theme-ocean [id^="row-menu-"],
+.theme-ocean .shadow-xs,
+.theme-ocean .shadow-sm {
+  background-color: #ffffff !important;
+  border-color: #c8daf0 !important;
+}
+
+/* Sub-panels and lighter containers */
+.theme-ocean .bg-slate-50, 
+.theme-ocean .bg-gray-50, 
+.theme-ocean .bg-gray-50\/70, 
+.theme-ocean .bg-gray-50\/50, 
+.theme-ocean .bg-slate-50\/50 {
+  background-color: #f0f4f8 !important;
+}
+
+/* Borders */
+.theme-ocean .border-gray-100, 
+.theme-ocean .border-slate-100, 
+.theme-ocean .border-slate-200, 
+.theme-ocean .border-gray-200,
+.theme-ocean .border-t,
+.theme-ocean .border-b,
+.theme-ocean .border {
+  border-color: #c8daf0 !important;
+}
+
+/* Typography styling overrides */
+.theme-ocean .text-gray-900, 
+.theme-ocean .text-slate-800, 
+.theme-ocean .text-gray-800, 
+.theme-ocean .text-indigo-950, 
+.theme-ocean h1, 
+.theme-ocean h2, 
+.theme-ocean h3, 
+.theme-ocean h4 {
+  color: #03346e !important;
+}
+
+.theme-ocean .text-gray-500, 
+.theme-ocean .text-slate-500, 
+.theme-ocean .text-gray-400, 
+.theme-ocean .text-slate-400 {
+  color: #4b709c !important;
+}
+
+/* Interactive elements & inputs */
+.theme-ocean input, 
+.theme-ocean select, 
+.theme-ocean textarea,
+.theme-ocean .bg-gray-50 input,
+.theme-ocean .bg-white input {
+  background-color: #ffffff !important;
+  color: #03346e !important;
+  border-color: #c8daf0 !important;
+}
+
+.theme-ocean .hover\:bg-gray-50\/50:hover, 
+.theme-ocean .hover\:bg-gray-50:hover,
+.theme-ocean tr:hover {
+  background-color: rgba(240, 244, 248, 0.7) !important;
+}
+
+.theme-ocean header, 
+.theme-ocean #top-navbar {
+  background-color: #ffffff !important;
+  border-bottom-color: #c8daf0 !important;
+}
