@@ -370,7 +370,7 @@ export default function App() {
         
         {/* Footer Credit line */}
         <div className="p-4 border-t border-slate-800 text-[10px] text-slate-500 text-center uppercase tracking-widest bg-slate-950 font-semibold no-print">
-          Cold Brew Cafe POS
+          Developed By Viraj Dabas / 7017429031
         </div>
       </aside>
 
